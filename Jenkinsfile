@@ -7,6 +7,11 @@ pipeline {
                 sh './mvnw clean test'
             }
         }
+        stage('Deploy') {
+                    steps {
+                        // Maven Wrapper ile test
+                    }
+                }
     }
     post {
         always {

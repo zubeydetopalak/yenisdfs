@@ -42,6 +42,6 @@ class TodoServiceTest {
         todo.setTitle("Save Test");
         when(todoRepository.save(todo)).thenReturn(todo);
         Todo saved = todoService.createTodo(todo);
-        assertEquals("Save Testtt", saved.getTitle());
+        assertEquals("Save Test", saved.getTitle());
     }
 }
